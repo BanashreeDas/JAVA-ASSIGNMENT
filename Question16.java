@@ -1,10 +1,8 @@
-//   Write a program to find sum of all integers greater than 100 and less than 200 that are divisible by 7.
-
 import java.util.*;
 
-class greater
+class GreaterNumber
 {
-    void suminteger(int num1,int num2){
+    void SumOfInteger(int num1,int num2){
         int X=num1, Y=num2, sum=0, rem=0;
         if(X>=100 && X<=200){
             for(int i=X;i<=Y;i++){
@@ -21,7 +19,7 @@ class greater
         }
     }
 }
-class Q16
+class Question16
 {
     public static void main(String []args)
     {
@@ -30,8 +28,7 @@ class Q16
         int x=sc.nextInt();
         System.out.print("Enter the Ending Range Y: ");
         int y=sc.nextInt();
-        greater obj=new greater();
-        obj.suminteger(x,y);
-        // obj.suminteger(y);
+        GreaterNumber obj=new GreaterNumber();
+        obj.SumOfInteger(x,y);
     }
 }
