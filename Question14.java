@@ -1,10 +1,8 @@
-// Write a java program to check whether a given number is palindrome number or not.
-
 import java.io.*;
 import java.util.*;
 
-class N{
-    void palindrome(int num){
+class PalindromeNumbers{
+    void Reverse(int num){
         int rem=0, rev=0;
         int X=num;
         while(num!=0){
@@ -14,7 +12,6 @@ class N{
             
         }
         
-        // System.out.println(rev);
         if(X==rev){
             System.out.println(rev+" : This is a Palindrome number");
             }
@@ -22,13 +19,13 @@ class N{
             System.out.println(rev+" : This number is not Palindrome Number");
     }
 }
-class Q14
+class Question14
 {
     public static void main(String []a){
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter you number: ");
         int x=sc.nextInt();
-        N obj=new N();
-        obj.palindrome(x);
+        PalindromeNumbers obj=new PalindromeNumbers();
+        obj.Reverse(x);
     }
 }
