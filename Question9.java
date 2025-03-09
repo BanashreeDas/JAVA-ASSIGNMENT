@@ -3,7 +3,7 @@
 import java.io.*;
 import java.util.*;
 
-class sumfac{
+class SumOfTerms{
     void fact(int num){
         int i,fact=1;
         float sum=0;
@@ -15,13 +15,13 @@ class sumfac{
         System.out.print("Sum of this series: "+sum); 
     }
 }
-class Q9{
+class Question9{
     public static void main(String []a){
         int n;
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter the number you want to print the series: ");
         n=sc.nextInt();
-        sumfac obj=new sumfac();
+        SumOfTerms obj=new SumOfTerms();
         obj.fact(n);
     }
 }
