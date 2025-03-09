@@ -1,6 +1,6 @@
 import java.util.*;
-class PRIME{
-    void prime(int range){
+class PRIMEnumbers{
+    void PR(int range){
         for(int i=2;i<=range;i++){
             int count=0;
             for(int j=2;j<=i/2;j++){
@@ -17,16 +17,15 @@ class PRIME{
         System.out.println();
     }
 }
-class Q2
+class Question2
 {
     public static void main(String[]a){
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter the range: ");
         int x=sc.nextInt();
-        // System.out.print("Enter the Ending Point: ");
-        // int y=sc.nextInt();
-        PRIME p=new PRIME();
-        p.prime(x);
+       
+        PRIMEnumbers p=new PRIMEnumbers();
+        p.PR(x);
     }
 }
 
