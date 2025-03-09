@@ -1,15 +1,15 @@
 import java.io.*;
 import java.util.*;
 
-class power_number
+class PowerNumber
 {
-	void power(int a,int b)
+	void JAVA(int a,int b)
 	{
 		System.out.print("The power of that number: "+(int) Math.pow(a,b));   // here use Math.pow Function
 	
 	}
 }
-class Q11
+class Question11
 {
 	public static void main(String []a)
 	{
@@ -20,8 +20,8 @@ class Q11
 		System.out.print("Enter the value of y: ");
 		int y=sc.nextInt();
 		
-		power_number obj=new power_number();
-		obj.power(x,y);
+		PowerNumber obj=new PowerNumber();
+		obj.JAVA(x,y);
 	
 	}
 }
