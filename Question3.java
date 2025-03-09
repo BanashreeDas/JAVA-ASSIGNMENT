@@ -1,31 +1,27 @@
 //  Write a java program to print a Fibonacci sequence where only first 8 positive prime numbers are present. 
 // Also print the prime numbers separately.
 
-// Q3.
-
-
 import java.io.*;
 import java.util.*;
 
-class sequence
+class PositivePrime
 {
-    void prime(int n)
+    void Numbers(int n)
     {
-        int n1=-1, n2=1, n3, i, j;
+        int number1=-1, number2=1, number3, i, j;
         System.out.print("Prime Fibonacci: ");
         for(i=1;i<=n;i++)
         {
-            n3=n1+n2;
-            n1=n2;
-            n2=n3;
-            //System.out.print(n3+" ");
+            number3=number1+number2;
+            number1=number2;
+            number2=number3;
 
-            if(n3>=2){
+            if(number3>=2){
                 int count=0;
                 for(j=2;j*j<=n3;j++){
                     
-                    if(n3%j==0){
-                        // System.out.print("jkd "+j+" ");
+                    if(number3%j==0){
+                        
                         count++;
                         break;
 
@@ -33,22 +29,22 @@ class sequence
 
                 }
                 if(count==0)
-                System.out.print(n3+" ");
+                System.out.print(number3+" ");
             }
             
         }
     }
 }
 
-public class Q3{
+public class Question3{
     public static void main(String[] args){
         int num;
         Scanner sc= new Scanner(System.in);
         System.out.print("Enter the number you want to print Fibonacci Prime number: ");
         num=sc.nextInt();
         
-        sequence obj= new sequence();
-        obj.prime(num);
+        PositivePrime obj= new PositivePrime();
+        obj.Numbers(num);
 
 }
 }
