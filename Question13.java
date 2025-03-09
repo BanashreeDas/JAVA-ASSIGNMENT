@@ -1,13 +1,11 @@
-// 13.Java Program to Check Whether a Number can be Expressed as Sum of Two Prime Numbers?
-
 import java.io.*;
 import java.util.*;
 
-class S
+class SUM
 {
-    int primesum(int num)
+    int SumOfPrime(int num)
     {
-        int count=0;
+        int c=0;
         if(num<2){
             System.out.println(num+" is not a prime number");
             return 0;
@@ -16,11 +14,11 @@ class S
         {
             if(num%i==0)
             {
-                count++;
+                c++;
                 break;
             }
         }
-        if(count ==0)
+        if(c ==0)
         {
             System.out.println(num+" is a prime number");
             return num;
@@ -31,7 +29,7 @@ class S
         return 0;
     }
 }
-class Q13
+class Question13
 {
     public static void main(String []args){
         int sum=0, x, y;
@@ -41,13 +39,13 @@ class Q13
         System.out.print("Enter the second number: ");
         y=sc.nextInt();
         
-        S obj=new S();
-        int X=obj.primesum(x);
-        int Y=obj.primesum(y);
+        SUM obj=new SUM();
+        int X=obj.SumOfPrime(x);
+        int Y=obj.SumOfPrime(y);
         sum=X + Y;
         if(X !=0 && Y !=0)
         {
-            obj.primesum(sum);
+            obj.SumOfPrime(sum);
              System.out.println("Sum of two Prime number: "+sum);
         }
         else{
