@@ -1,6 +1,3 @@
-//   15.Write a program to generate 5 Random nos. between 1 to 100.
-
-import java.util.*;
 import java.lang.Math;
 
 class Generate{
@@ -12,13 +9,12 @@ class Generate{
         for(i=1;i<=num;i++){
             int random=(int)(Math.random()*End);
             System.out.print(random+"  ");
-            // count++;
         }
         System.out.println("Count: "+i);
     }
 }
 
-class Q15
+class Question15
 {
     public static void main(String []a)
     {
