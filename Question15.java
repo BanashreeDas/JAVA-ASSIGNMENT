@@ -1,4 +1,5 @@
 import java.lang.Math;
+import java.util.*;
 
 class Generate{
     void Random(int num){
