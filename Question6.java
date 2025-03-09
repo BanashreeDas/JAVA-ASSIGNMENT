@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-class Fact
+class Factorial
 {
 	void fact(int num){
 		int i, f=1;
@@ -13,13 +13,13 @@ class Fact
 		System.out.print(f);
 	}
 }
-class Q6{
+class Question6{
 	public static void main(String a[]){
 		int n;
 		Scanner sc= new Scanner(System.in);
 		System.out.print("Enter the number you want to print the sequence:");
 		n=sc.nextInt();
-		Fact obj=new Fact();
+		Factorial obj=new Factorial();
 		obj.fact(n);
 	}
 
