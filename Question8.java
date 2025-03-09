@@ -1,11 +1,11 @@
-// Write a java program to find GCD of two number?
+// Write a java program to find GCD of two number
 
 import java.io.*;
 import java.util.*;
 
 class GCD
 {
-	void gcd(int a,int b){
+	void two_numbers(int a,int b){
 		//int a, b;
 		int rem;
 		
@@ -21,7 +21,7 @@ class GCD
 	}
 }
 
-class Q8{
+class Question8{
 	public static void main(String []args){
 		Scanner sc= new Scanner(System.in);
 		System.out.print("Enter First Number: ");
@@ -29,8 +29,7 @@ class Q8{
 		System.out.print("Enter second Number: ");
 		int y=sc.nextInt();
 		GCD obj=new GCD();
-		obj.gcd(x,y);
-		// obj.g(y);
-
+		obj.two_numbers(x,y);
+		
 	}
 }
