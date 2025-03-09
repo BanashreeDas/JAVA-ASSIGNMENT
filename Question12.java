@@ -1,8 +1,8 @@
 import java.io.*;
 import java.util.*;
-class factor
+class Factors
 {
-    void number(int num)
+    void NUMBERS(int num)
     {
         for(int i=1;i<=num;i++){
             if(num%i==0){
@@ -11,7 +11,7 @@ class factor
         }
     }
 }
-class Q12
+class Question12
 {
     public static void main(String []a)
     {
@@ -19,7 +19,7 @@ class Q12
         System.out.print("Enter the value: ");
         int x=sc.nextInt();
         
-        factor obj=new factor();
-        obj.number(x);
+        Factors obj=new Factors();
+        obj.NUMBERS(x);
     }
 }
